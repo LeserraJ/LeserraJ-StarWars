@@ -1,0 +1,16 @@
+#main_container {
+  border: solid red 2px;
+
+  height: 100vh;
+}
+
+* {
+  margin: auto;
+  padding: auto;
+}
+
+.row {
+  margin-top: 2rem;
+  border: solid red 2px;
+  padding-left: 6rem;
+}
