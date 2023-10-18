@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../component/card.js";
+import{ Card }from "../component/card.js";
 import "../../styles/home.css";
 
 
