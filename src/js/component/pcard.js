@@ -2,11 +2,11 @@ import React from "react";
 
 import { useState, useEffect } from "react";
 
-export const Card = () => {
+export const Planet_Card = () => {
   const [cardData, setCardData] = useState([]);
 
   const getDataList = async () => {
-    const url = "https://swapi.dev/api/people/";
+    const url = "https://swapi.dev/api/planets/";
 
     const response = await fetch(url);
     try {
@@ -29,10 +29,8 @@ export const Card = () => {
           <div className="card">
             <div className="card-body">
               <h5 className="card- title">{card.name}</h5>
-              <p className="card-text">
-                Height: {card.height}  
-              </p>
-              <p className="card-text">Weight: {card.mass}</p>
+              <p className="card-text">Climate: {card.climate}</p>
+              <p className="card-text">Population: {card.population}</p>
               <a href="#" className="btn btn-primary">
                 {card.url}
               </a>
@@ -43,4 +41,3 @@ export const Card = () => {
     </>
   );
 };
-
