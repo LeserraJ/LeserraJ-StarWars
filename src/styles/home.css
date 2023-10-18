@@ -1,7 +1,5 @@
 #main_container {
   border: solid red 2px;
-
-  height: 100vh;
 }
 
 * {
@@ -9,8 +7,16 @@
   padding: auto;
 }
 
-.row {
+.col {
   margin-top: 2rem;
   border: solid red 2px;
-  padding-left: 6rem;
+  justify-content: space-evenly;
+  display: inline-flex;
+  scroll-behaviour: smooth;
+  overflow-x: scroll;
+}
+
+.card {
+  height: auto;
+  width: auto;
 }
