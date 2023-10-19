@@ -24,9 +24,9 @@ export const Planet_Card = () => {
 
   return (
     <>
-      {cardData.map((card) => {
+      {cardData.map((card, index) => {
         return (
-          <div className="card">
+          <div className="card" key={index} value={card}>
             <div className="card-body">
               <h5 className="card- title">{card.name}</h5>
               <p className="card-text">Climate: {card.climate}</p>

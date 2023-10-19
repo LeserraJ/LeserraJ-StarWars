@@ -17,7 +17,6 @@
 #card {
   height: auto;
   width: 5rem;
-  justify-content: space-between;
 }
 
 h2 {
@@ -25,6 +24,14 @@ h2 {
 }
 
 .card-container {
-  border: solid red 2px;
+  //border: solid red 2px;
   margin-top: 2rem;
+}
+
+.form-outline {
+  display: inline-flex;
+}
+
+.form-control {
+  padding-right: 5rem;
 }

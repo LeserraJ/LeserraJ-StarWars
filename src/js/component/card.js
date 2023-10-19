@@ -24,14 +24,12 @@ export const Card = () => {
 
   return (
     <>
-      {cardData.map((card) => {
+      {cardData.map((card, index) => {
         return (
-          <div className="card">
+          <div className="card" value={card} key={index}>
             <div className="card-body">
               <h5 className="card- title">{card.name}</h5>
-              <p className="card-text">
-                Height: {card.height}  
-              </p>
+              <p className="card-text">Height: {card.height}</p>
               <p className="card-text">Weight: {card.mass}</p>
               <a href="#" className="btn btn-primary">
                 {card.url}
@@ -43,4 +41,3 @@ export const Card = () => {
     </>
   );
 };
-
